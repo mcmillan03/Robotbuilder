@@ -10,8 +10,7 @@ Columbus, OH 43210
 
 Robot simulation environment from Ohio State. Includes Dynamechs simulation engine and Robotbuilder interface
 
-##
-What is RobotBuilder?
+## What is RobotBuilder?
 
 RobotBuilder is a software application that can be used to rapidly develop robotic dynamic simulations. It has an intuitive Windows interface to make it easy to use, but can perform complex simulations. The dynamic calculations are performed by DynaMechs, developed by Scott McMillan. It can simulate tree structures and star topologies with O(n) complexity. It also efficiently simulates robotic articulations with closed-kinematic loops; this capability was developed by Duane Marhefka.
 
