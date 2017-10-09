@@ -1,0 +1,25 @@
+CXXFLAGS := -pedantic -Wtraditional -Wpointer-arith -Wconversion -Wstrict-prototypes -g -D_BOOL -Wall -c -fPIC -march=i686 -D_POSIX_C_SOURCE=199506L -I/$(OPENGLINCDIR)
+# -pthreads
+DEPENDFLAGS := $(CXXFLAGS)
+
+LDFLAGS := -fPIC -L/$(OPENGLLIBDIR) -L/usr/X11R6/lib -L/usr/X11/lib -lX11 -lm -l$(MESA)GLU -l$(MESA)GL -ldl
+LDGLUT := -lglut
+
+CXX := g++
+LINKER := g++
+SHLINKER := g++
+
+SHLKFLAG := -shared -fPIC
+
+space :=
+OBJNAMEARG := -o $(space)
+EXENAMEARG := -o $(space)
+SHLNAMEARG := -o $(space)
+LINKDIRARG := -L
+LINKLIBARG := -l
+LINKLIBSFX :=
+
+LIBSFX := so
+LIBPFX := lib
+EXESFX := exe
+OBJSFX := o

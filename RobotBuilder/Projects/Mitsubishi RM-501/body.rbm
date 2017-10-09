@@ -1,0 +1,74 @@
+Format:	1
+BackgroundColor:	125	158	192
+UseUserSuppliedDataForPhysicalData: TRUE
+NumPrimitives:	7
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.75	0	-0.45
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	255	113	45
+	Name:		"Base"
+	Mass:		1
+	Parameters:	2.5	1.2	0.9	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-1	0	-0.06
+	Rotation:		0.951057	0	0.309016
+			0	1	0
+			-0.309016	0	0.951057
+	Covering:		SIMPLE_COLOR	255	113	45
+	Name:		"Slant"
+	Mass:		1
+	Parameters:	1.9	1.2	0.5	0
+CYLINDER
+	Scale:		1	1	1
+	Translation:	-1.8	0	-0.2
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	45	45	45
+	Name:		"Back Rod"
+	Mass:		1
+	Parameters:	1.5	0.05	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0	0	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	255	123	60
+	Name:		"Joint"
+	Mass:		1
+	Parameters:	1.4	0.1	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0	0	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	255	128	64
+	Name:		"Joint Base"
+	Mass:		1
+	Parameters:	1.3	0.15	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	-1.8	0	-0.2
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	255	128	64
+	Name:		"Back Rod Base"
+	Mass:		1
+	Parameters:	1.3	0.15	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0	0	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	255	113	45
+	Name:		"Base Curve"
+	Mass:		1
+	Parameters:	1.2	0.5	20	0	1

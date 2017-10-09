@@ -1,0 +1,33 @@
+1.1
+- Added a view angle input box
+- Added a separate X and Y terrain grid resolution
+- Added the triangle wireframe overlay on terrain option
+
+1.0
+- Modified the Pan View to update the center of interest offset
+- Changed the Simulation Properties dialog box into a tabbed dialog box
+- Added the ability to specify a user defined view in the configuration file
+- Added new toolbar buttons to switch between Pan and Examine view
+- Added new toolbar button to select the user defined view
+- Added a new option in the camera control dialog to stabilize the vertical 
+   camera position during simulation
+- Added a tutorial for new users of RobotBuilder
+- Implemented prompts for saving changes to the configuration file
+- Update Help->About with additional credits
+- Several minor bug fixes
+
+0.61 b
+- Minor changes to the graphics in a couple of the example projects
+- User's Guide included for RobotBuilder and RobotModeler.  They are found
+   in the Docs directory, or can be accessed from Help->User's Guide
+- Updated Help->About to point to new RobotBuilder webpage
+
+0.60 b
+- Lots of bug fixes
+- Improved light model
+- Added support for RobotModeler models
+- Treadmill environment support
+
+
+0.50 b
+- Public Beta Release

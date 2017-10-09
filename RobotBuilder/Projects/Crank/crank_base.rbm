@@ -1,0 +1,84 @@
+Format:	1
+BackgroundColor:	125	158	192
+UseUserSuppliedDataForPhysicalData: TRUE
+NumPrimitives:	8
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.625	-0.25	0.025
+	Rotation:		1	0	0
+			0	-4.37114e-008	1
+			0	-1	-4.37114e-008
+	Covering:		SIMPLE_COLOR	128	128	128
+	Name:		"Bottom"
+	Mass:		1
+	Parameters:	1.25	0.05	0.5	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.625	-0.025	0.25
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	128	128	128
+	Name:		"Back"
+	Mass:		1
+	Parameters:	1.25	0.05	0.5	0
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0.625	-0.5	0.5
+	Rotation:		-5.96046e-007	1	0
+			-1	-5.96046e-007	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"Shaft"
+	Mass:		1
+	Parameters:	1.25	0.01	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0.25	-0.06	0.275
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	0	0	0
+	Name:		"Crank Drive"
+	Mass:		1
+	Parameters:	0.1	0.025	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	1.25	-0.5	0.25
+	Rotation:		1	0	0
+			0	-4.37114e-008	1
+			0	-1	-4.37114e-008
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"Vertical Support Right"
+	Mass:		1
+	Parameters:	0.5	0.01	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	1.25	-0.25	0.5
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"Horizontal Support Right"
+	Mass:		1
+	Parameters:	0.5	0.01	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0	-0.25	0.5
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"Horizontal Support Left"
+	Mass:		1
+	Parameters:	0.5	0.01	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0	-0.5	0.25
+	Rotation:		1	0	0
+			0	-4.37114e-008	1
+			0	-1	-4.37114e-008
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"Vertical Support Left"
+	Mass:		1
+	Parameters:	0.5	0.01	20	0	1

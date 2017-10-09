@@ -1,0 +1,179 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dm - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP3.tmp" with contents
+[
+/nologo /G6 /MD /W3 /GR /GX /O2 /Op /I "..\dm" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "dm_DLL_FILE" /D "NO_DM_DEBUG_PRINTS" /Fo"../obj/platform.msvc60.i686/" /Fd"../obj/platform.msvc60.i686/" /FD /TP /c 
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmActuator.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmArticulation.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmClosedArticulation.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmContactModel.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmEnvironment.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmForce.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmIntegEuler.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmIntegPlacement.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmIntegrator.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmIntegRK4.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmIntegRK45.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmMDHLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmMobileBaseLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmObject.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmPrismaticLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmQuaternionLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmRevDCMotor.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmRevoluteLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmRigidBody.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmSecondaryForce.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmSecondaryJoint.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmSecondaryPrismaticJoint.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmSecondaryRevoluteJoint.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmSecondarySphericalJoint.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmSphericalLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmStaticRootLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmSystem.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmTreadmill.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmZScrewTxLink.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\gldraw.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\svd_linpack.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP3.tmp" 
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wsock32.lib Glu32.lib Opengl32.lib /nologo /dll /incremental:yes /pdb:"../lib/platform.msvc60.i686/dm.pdb" /machine:I386 /out:"../lib/platform.msvc60.i686/dm.dll" /implib:"../lib/platform.msvc60.i686/dm.lib" /libpath:"../lib/platform.msvc60.i686" 
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmActuator.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmArticulation.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmClosedArticulation.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmContactModel.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmEnvironment.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmForce.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegEuler.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegPlacement.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegrator.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegRK4.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegRK45.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmMDHLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmMobileBaseLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmObject.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmPrismaticLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmQuaternionLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmRevDCMotor.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmRevoluteLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmRigidBody.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondaryForce.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondaryJoint.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondaryPrismaticJoint.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondaryRevoluteJoint.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondarySphericalJoint.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSphericalLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmStaticRootLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSystem.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmTreadmill.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmZScrewTxLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\gldraw.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\svd_linpack.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP4.tmp"
+<h3>Output Window</h3>
+Compiling...
+dmActuator.cpp
+dmArticulation.cpp
+dmClosedArticulation.cpp
+dmContactModel.cpp
+dmEnvironment.cpp
+dmForce.cpp
+dmIntegEuler.cpp
+dmIntegPlacement.cpp
+dmIntegrator.cpp
+dmIntegRK4.cpp
+dmIntegRK45.cpp
+dmLink.cpp
+dmMDHLink.cpp
+dmMobileBaseLink.cpp
+dmObject.cpp
+dmPrismaticLink.cpp
+dmQuaternionLink.cpp
+dmRevDCMotor.cpp
+dmRevoluteLink.cpp
+dmRigidBody.cpp
+Generating Code...
+Compiling...
+dmSecondaryForce.cpp
+dmSecondaryJoint.cpp
+dmSecondaryPrismaticJoint.cpp
+dmSecondaryRevoluteJoint.cpp
+dmSecondarySphericalJoint.cpp
+dmSphericalLink.cpp
+dmStaticRootLink.cpp
+dmSystem.cpp
+dmTreadmill.cpp
+dmZScrewTxLink.cpp
+gldraw.cpp
+svd_linpack.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/platform.msvc60.i686/dm.lib and object ../lib/platform.msvc60.i686/dm.exp
+<h3>
+--------------------Configuration: dmu - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP8.tmp" with contents
+[
+/nologo /G6 /MD /W3 /GR /GX /O2 /Op /I "..\dm" /I "..\dmu" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "dmu_DLL_FILE" /Fo"../obj/platform.msvc60.i686/" /Fd"../obj/platform.msvc60.i686/" /FD /c 
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmLoader.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmLoader_dm.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmLoader_dm203.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmLoader_dm21.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmLoader_dm30.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmLoader_dm40.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmLoader_env.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmLock.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\dmUtils.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dmu\glLoadModels.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP8.tmp" 
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP9.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Opengl32.lib wsock32.lib Glu32.lib dm.lib /nologo /dll /incremental:yes /pdb:"../lib/platform.msvc60.i686/dmu.pdb" /machine:I386 /out:"../lib/platform.msvc60.i686/dmu.dll" /implib:"../lib/platform.msvc60.i686/dmu.lib" /libpath:"../lib/platform.msvc60.i686" 
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLoader.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLoader_dm.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLoader_dm203.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLoader_dm21.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLoader_dm30.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLoader_dm40.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLoader_env.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLock.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmUtils.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\glLoadModels.obj
+\Projects\School2\DynaMechs4.0\dynamechs\lib\platform.msvc60.i686\dm.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP9.tmp"
+<h3>Output Window</h3>
+Compiling...
+dmLoader.cpp
+dmLoader_dm.cpp
+dmLoader_dm203.cpp
+dmLoader_dm21.cpp
+dmLoader_dm30.cpp
+dmLoader_dm40.cpp
+dmLoader_env.cpp
+dmLock.cpp
+dmUtils.cpp
+glLoadModels.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/platform.msvc60.i686/dmu.lib and object ../lib/platform.msvc60.i686/dmu.exp
+
+
+
+<h3>Results</h3>
+dmu.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

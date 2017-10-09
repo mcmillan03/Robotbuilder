@@ -1,0 +1,398 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (X11; I; Linux 2.2.11 i686) [Netscape]">
+   <title>DYNAMECHS: A Multibody Dynamic Simulation Library</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#00708F" vlink="#990066" alink="#DD0000">
+&nbsp;
+<table CELLSPACING=0 CELLPADDING=0 WIDTH="100%" NOSAVE >
+<tr><td VALIGN=TOP>
+<h1><img SRC="aqua_small.png"></h1>
+</td>
+<td VALIGN=BOTTOM>
+<h1>DynaMechs (Dynamics of Mechanisms):<br>A Multibody Dynamic Simulation
+Library</h1> 
+</td>
+</tr>
+<tr NOSAVE>
+<td VALIGN=TOP NOSAVE>
+<table CELLSPACING=5 CELLPADDING=0 >
+<tr>
+<td VALIGN=TOP>
+<p><font size=-1>Home Page</font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#intro">Introduction</a></font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#features">Features</a></font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#requirements">Requirements</a></font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#download">Download</a></font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#install">Installation</a></font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#doc">Documentation</a></font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#develop">Developers Info</a></font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#contrib">Contributors</a></font>
+<p><font size=-1>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#contact">Contact</a></font>
+<br>&nbsp;
+<br>&nbsp;
+<p><font size=-1><a href="projects.html">Projects/Screenshots</a></font>
+<p><font size=-1><a href="publications.html">Publications</a></font>
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<p>Powered by:<br><a href="http://sourceforge.net">
+<IMG src="http://sourceforge.net/sflogo.php?group_id=3076&type=1" width="88"
+height="31" border="0"></A> 
+<br>&nbsp;
+<br>&nbsp;
+<p>&nbsp;</td>
+
+<td VALIGN=TOP WIDTH="1" BGCOLOR="#808080"></td>
+
+</tr>
+</table>
+</td>
+
+<td VALIGN=TOP>
+
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="news"></a><b><font face="Futura, Arial,
+		    Helvetica"><font color="#FFFFFF"><font size=+1>News</font></font></font></b></td>
+</tr>
+</table>
+
+<ul>
+<li>
+<b>[01/07/18] Version 4.0pre1 (finally!) is released that includes Duane
+Marhefka's code for closed chain dynamics.  This is a pre-release until I can
+get all the documentation updated. Go to the <a
+href="http://sourceforge.net/project/?group_id=3076">DynaMechs Project Home
+Page</a> and look at the File Releases section.</b></li>
+
+<li>
+<b>[00/05/04] The <a href="http://dynamechs.sourceforge.net/">DynaMechs home
+page</a> has a new look.</b></li>
+
+<li>
+<b>[00/03/xx] <a href="http://sourceforge.net/">Sourceforge</a> has agreed
+to host the development of
+<a href="http://sourceforge.net/project/?group_id=3076">DynaMechs</a>.</b></li>
+</ul>
+
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="intro"></a><b><font face="Futura, Arial,
+		    Helvetica"><font color="#FFFFFF"><font size=+1>Introduction</font></font></font></b></td>
+</tr>
+</table>
+
+<P>Development of the DynaMechs simulation software began in 1991 by myself
+(Scott McMillan) at <A HREF="http://eewww.eng.ohio-state.edu/">The Ohio State
+University Department of Electrical Engineering</A> driven by the need to
+develop a real-time dynamic and hydrodynamic simulation system for two
+graduate research projects: (1) to aid in the development of a new walking
+control algorithm for Aquarobot, an underwater walking hexapod to be used in
+surveying and construction applications during construction of seawalls in
+Japan; and (2) to develop real-time control algorithms and operator
+interfaces for a remotely-operated vehicle (ROV), Tiburon, that was under
+development at the Monterey Bay Aquarium Research Institute (MBARI) for
+scientific research in the 3000m deep Monterey Canyon.  Since then Duane
+Marhefka has added the capability to simulation systems with closed kinematic
+loops (new in version 4.0).  Go to the <A HREF="projects.html">Projects
+Page</A> for more details about these and other projects that use the
+DynaMechs library.
+
+<P>This software package (a cross-platform, object-oriented, C++ class
+library) supports dynamic simulation of a large class of articulated
+mechanisms.  From simple serial chains to tree-structured articulated
+mechanisms (including the simpler star topologies) to systems with closed
+loops.  Code to compute approximate hydrodynamic forces are also available to
+simulate underwater robotic systems of this class including submarines (ROVs,
+AUVs, etc.) with one or more robotic manipulators.  Joint types supported
+include the standard revolute and prismatic classes, as well as an efficient
+implementations (using Euler angles or quaternions) for ball joints.
+
+<p>Work is ongoing (mainly at The Ohio State University) to extend the
+capabilities of DynaMechs and develop a user-friendly front-end (called
+RobotBuilder) to facilitate ease of use while targeting the upperclass- and
+graduate-level engineering courses.  Other work is underway to add the
+ability to simulate other joint types like the the 2 revolute degree of
+freedom universal (Hooke) joint, and to develop more accurate contact force
+models to aid in the development of walking machines.
+
+<br>&nbsp;
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="features"></a><b><font face="Futura, Arial,
+		    Helvetica"><font color="#FFFFFF"><font size=+1>Features</font></font></font></b></td>
+</tr>
+</table>
+
+<p>Current Features:&nbsp;
+<ul>
+<li>
+Object-oriented (implemented in C++) therefore extendable (subclassing
+nodes is easy).</li>
+
+<li>
+Cross platform - currently runs on:</li>
+
+<ul>
+<li>
+Linux - g++ 2.91.x and 2.95.x,</li>
+
+<li>
+Solaris - g++ 2.95.x,</li>
+
+<li>
+IRIX - MIPSPro C++ 7.3.x</li>
+
+<li>
+NT - VC++ 6.0 (all current Service Paks)</li>
+</ul>
+
+<li>
+Joint types supported:</li>
+
+<ul>
+<li>
+Rigid Z-transform (used for branching)</li>
+
+<li>
+1 DOF revolute and prismatic joints</li>
+
+<li>
+3 DOF ball-joint (euler angles or quaternion)</li>
+
+<li>
+2 DOF universal joint (in the works)</li>
+</ul>
+
+<li>
+Support for serial chain and tree structured mechanisms.</li>
+
+<li>
+Support for closed chain systems (<font color="#FF0000">NEW</font>).</li>
+
+<li>
+Support for fixed or mobile bases</li>
+
+<li>
+Support for lumped parameter hydrodynamic effects (drag, added mass, lift,...)</li>
+
+<li>
+Can be compiled for single or double precision computations</li>
+
+<li>
+Multiple numerical integrators (choose your accuracy vs. numerical stability).</li>
+</ul>
+
+
+
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="requirements"></a><b><font face="Futura,
+		      Arial, Helvetica"><font color="#FFFFFF"><font size=+1>Software
+Requirements and Recommendations</font></font></font></b></td>
+</tr>
+</table>
+
+<p>Right now DynaMechs comes in source code only. This means that you have to
+compile the package for yourself.&nbsp; The following is a list of other
+software you will need or is recommended to build this package:&nbsp;
+<ul>
+<li>
+<b>OpenGL v1.1 or later</b> - DynaMechs is built on top of OpenGL.&nbsp; A free
+workalike version, called Mesa, can be downloaded from <a href="http://www.mesa3d.org">www.mesa3d.org</a>.
+If you go this route, I strongly recommend getting version 3.2 of Mesa
+(currently beta) over version 3.1 which exhibits many bugs.</li>
+
+<li>
+<b>GLUT</b> - DynaMechs uses GLUT (OpenGL Utility Toolkit) for its demo/test
+programs.  Version 3.6 or later which can be downloaded with the Mesa demos
+distribution or from its own site <a
+href="http://reality.sgi.com/mjk_asd/glut3/glut3.html">here</a>.</li>
+
+<li>
+<b>GNU make</b> v.3.77 or later is required to build with the provided
+makefiles.</li>
+
+<li>
+<b>C++ compiler</b> - A current C++ compiler is also recommended.&nbsp;
+I use MIPSPro 7.3.x on IRIX, VC++ 6.0 on NT with all available Service
+Paks,&nbsp; g++ 2.91.66 that came with RedHat 6.0 Mandrake distribution, and
+g++ 2.95.x on Solaris.&nbsp; This does not mean other compilers won't work,
+but I have had many problems with earlier versions (e.g., g++ 2.7.2) in the
+past. Support for g++ versions prior to 2.95.1 may be dropped in the near
+future.</li>
+
+<li>
+<b>Cygwin tools for NT</b> is recommended if you are building on an NT
+platform with the provided makefiles.  You can only use the provided
+makefiles if you install the Cygwin tools (a bash environment for Windows)
+from <a href="http://www.cygnus.com">Cygnus </a>.
+I have finally found some time to develop VC++ project files that mimic, as
+closely as I could, the behaviour of the provided makefiles...read below.</li>
+
+<p><br>If you discover any other requirements let me know.
+</ul>
+
+<font color="#FF0000">NOTE to Microsoft Dev Studio Users:&nbsp; As of release
+4.0, a workspace and project files have been included with the distribution
+in the make.msdev subdirectory.&nbsp; You will not need Cygwin tools or&nbsp;
+GNU make 3.77 to build the windows version of the libraries.  It is required
+that you apply the latest DevStudio Service Paks to ensure a successful
+compiled.</font>
+
+<br>&nbsp;
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="download"></a><b><font face="Futura,
+		      Arial, Helvetica"><font color="#FFFFFF"><font size=+1>Download</font></font></font></b></td>
+</tr>
+</table>
+
+<p>You can obtain the source code in one of two ways: (1) download a packaged
+released from <a
+href="http://sourceforge.net/project/showfiles.php?group_id=3076">the 
+DynaMechs Releases Page</a>, or (2) check out the distribution from the cvs
+server (details about how to do this is available on the <a
+href="http://sourceforge.net/cvs/?group_id=3076">DynaMechs 
+CVS Repository Info Page</a>. The entire package is contained in the DynaMechs
+module, and you can check this out with the following cvs command:
+<table CELLPADDING=10 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#FFFFCC"><tt>&nbsp;&nbsp;&nbsp; cvs checkout dynamechs</tt></td>
+</tr>
+</table>
+
+<p>This will create a directory called 'dynamechs' consisting of the following
+files/directories:&nbsp;
+<blockquote>Makefile&nbsp;&nbsp; - top level makefile
+<br>make/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - all of the files
+used to build the package for each of the supported platforms
+<br>dynamechs/dm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - source files for
+the scenegraph library
+<br>dynamechs/dmu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - source code for miscellaneous
+utilities (libdmu.so or dmu.dll)
+<br>dynamechs/dmGL&nbsp;&nbsp;&nbsp; - wrappers for GLUT objects used by test
+and example programs
+<br>dynamechs/testdm&nbsp; - test programs
+<br>dynamechs/aquarobot&nbsp; - example: the aquarobot with Gait algorithm
+<br>dynamechs/mesh&nbsp; - example: a closed-chain example
+<br>dynamechs/models - data to test the loaders</blockquote>
+
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="install"></a><b><font face="Futura, Arial,
+		    Helvetica"><font color="#FFFFFF"><font size=+1>Installation</font></font></font></b></td>
+</tr>
+</table>
+
+<p>Please read the INSTALL file for the latest instructions on building
+the package (it changes too often to include directions here).
+<br>&nbsp;
+
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="doc"></a><b><font face="Futura,
+		      Arial, Helvetica"><font color="#FFFFFF"><font size=+1>Documentation</font></font></font></b></td>
+</tr>
+</table>
+
+<p>The following is a list of documentation related to DynaMechs:
+<ul>
+<li>
+<a href="projects.html">Description of various projects that have used
+DynaMechs.</a></li>
+
+<li>
+<a href="publications.html">Related publications.</a></li>
+
+<li>
+Class hierarchy [<a href="classes.html">HTML</a>,
+<a href="hierarchies_4.0.ps">Postscript</a>]</li>
+
+<li>
+<a href="ref_manual.ps">A reference manual describing all of the classes (Postscript)</a></li>
+</ul>
+
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="develop"></a><b><font face="Futura,
+		      Arial, Helvetica"><font color="#FFFFFF"><font size=+1>Developers
+Information&nbsp;</font></font></font></b></td>
+</tr>
+</table>
+
+<p>Sourceforge provides a host of services: CVS repository for the code
+and documentation; a bug list that also contains future features to be
+worked on; a mailing list, DynaMechs-dev, which also gets all of the CVS repository
+commit messages; and an anonymous FTP site. The links to these are listed
+below:&nbsp;
+<ul>
+<li>
+<a href="http://sourceforge.net/project/?group_id=3076">DynaMechs Development
+Home Page</a></li>
+
+<li>
+<a href="http://sourceforge.net/cvs/?group_id=3076">DynaMechs CVS Repository
+Info</a></li>
+
+<li>
+<a href="http://sourceforge.net/bugs/?group_id=3076">DynaMechs Bug Tracking Info</a></li>
+
+<li>
+<a href="http://sourceforge.net/mail/?group_id=3076">DynaMechs-DEV Mailing List
+Info</a></li>
+</ul>
+
+
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="contrib"></a><b><font face="Futura,
+		      Arial, Helvetica"><font color="#FFFFFF"><font size=+1>Contributors</font></font></font></b></td>
+</tr>
+</table>
+
+<p>The following is a list of other contributors (thanks):&nbsp;
+<blockquote>
+<li>
+Dr. David E. Orin and Dr. Robert B. McGhee - advisors on the original
+project</li> 
+<li>
+Duane Marhefka - quadruped simulation, closed-chain work</li>
+<li>
+Chris Tegnalia and Steven Rodenbaugh - a more accurate contact force
+algorithm, and the driving force behind developing dynamic terrain.</li>
+<li>
+Steven Rodenbaugh - developer of RobotBuilder which is an application using
+DynaMechs that provides a GUI for graphically building robots.</li>
+<li>
+Kenji Suzuki, Kan Yoneda, Yutaka Kanayama - the gait algorithm in the
+aquarobot example.</li>
+</blockquote>
+
+<table BORDER=0 WIDTH="100%" >
+<tr>
+<td BGCOLOR="#A0A0A0"><a NAME="contact"></a><b><font face="Futura,
+		      Arial, Helvetica"><font color="#FFFFFF"><font size=+1>Contact</font></font></font></b></td>
+</tr>
+</table>
+
+<p>I am interested to know if you find DynaMechs useful. If you would like to
+give feedback and/or contribute to its development, please feel free to
+<a href="http://sourceforge.net/developer/?form_dev=2995">contact
+me</a>.</td>
+
+</tr>
+</table>
+
+<hr>
+<address>
+Last modified: 18 July 2001 by Scott McMillan</address>
+
+</body>
+</html>

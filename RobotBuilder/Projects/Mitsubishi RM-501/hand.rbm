@@ -1,0 +1,44 @@
+Format:	1
+BackgroundColor:	125	158	192
+UseUserSuppliedDataForPhysicalData: TRUE
+NumPrimitives:	4
+CYLINDER
+	Scale:		1	1	1
+	Translation:	8.74228e-009	-1.52855e-015	0.4
+	Rotation:		-1	1.74846e-007	8.74229e-008
+			-8.74229e-008	-5.96046e-007	-1
+			-1.74846e-007	-1	-5.96046e-007
+	Covering:		SIMPLE_COLOR	128	128	128
+	Name:		"White"
+	Mass:		1
+	Parameters:	0.2	0.3	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	1.74846e-008	0	0.2
+	Rotation:		-1	0	8.74228e-008
+			-8.74228e-008	-5.96046e-007	-1
+			5.2108e-014	-1	5.96046e-007
+	Covering:		SIMPLE_COLOR	11	11	11
+	Name:		"Black"
+	Mass:		1
+	Parameters:	0.4	0.12	20	0	1
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	0	1.02
+	Rotation:		-1	1.74846e-007	8.74228e-008
+			1.74846e-007	1	-5.0822e-021
+			-8.74228e-008	1.52855e-014	-1
+	Covering:		SIMPLE_COLOR	74	74	74
+	Name:		"Gripper Holder"
+	Mass:		1
+	Parameters:	0.8	0.4	0.25	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	0	0.7
+	Rotation:		-1	1.74846e-007	8.74228e-008
+			1.74846e-007	1	-5.0822e-021
+			-8.74228e-008	1.52855e-014	-1
+	Covering:		SIMPLE_COLOR	74	74	74
+	Name:		"Block"
+	Mass:		1
+	Parameters:	0.5	0.4	0.4	0

@@ -1,0 +1,27 @@
+GCCLIBS := -L/opt/gcc-2.95.3/lib
+
+CXXFLAGS := -pedantic -Wtraditional -Wpointer-arith -Wconversion -Wstrict-prototypes -g -D_BOOL -Wall -c -fPIC -mv8 -D_POSIX_C_SOURCE=199506L -D_PTHREADS -pthreads
+DEPENDFLAGS := $(CXXFLAGS)
+
+LDFLAGS := -fPIC -L/usr/openwin/lib $(GCCLIBS) -lXmu -lX11 -lGLU -lGL -lposix4 -lm
+LDGLUT := -lglut
+
+
+CXX := g++
+LINKER := g++
+SHLINKER := g++
+
+SHLKFLAG := -shared -fPIC
+
+space :=
+OBJNAMEARG := -o $(space)
+EXENAMEARG := -o $(space)
+SHLNAMEARG := -o $(space)
+LINKDIRARG := -L
+LINKLIBARG := -l
+LINKLIBSFX :=
+
+LIBSFX := so
+LIBPFX := lib
+EXESFX := exe
+OBJSFX := o

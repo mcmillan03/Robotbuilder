@@ -1,0 +1,269 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "aquarobot"=.\aquarobot.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name aquarobot_gait
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmu
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "aquarobot_gait"=.\aquarobot_gait.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "carts"=.\carts.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmu
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "crank"=.\crank.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmu
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "dm"=.\dm.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dmGL"=.\dmGL.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dmu"=.\dmu.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mesh"=.\mesh.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmu
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "pendulum"=.\pendulum.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ring"=.\ring.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmu
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "simple"=.\simple.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "star"=.\star.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmu
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "tree"=.\tree.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmu
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "wire"=.\wire.dsp - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name dm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmGL
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dmu
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

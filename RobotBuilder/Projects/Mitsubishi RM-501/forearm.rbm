@@ -1,0 +1,44 @@
+Format:	1
+BackgroundColor:	125	158	192
+UseUserSuppliedDataForPhysicalData: TRUE
+NumPrimitives:	4
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.6	0	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	255	106	34
+	Name:		"Main"
+	Mass:		1
+	Parameters:	1.2	0.9	0.8	0
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0.9	0.1	0.5
+	Rotation:		1	0	0
+			0	-4.37114e-008	1
+			0	-1	-4.37114e-008
+	Covering:		SIMPLE_COLOR	255	128	64
+	Name:		"Side Cylinder"
+	Mass:		1
+	Parameters:	0.5	0.3	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	1.2	0	0
+	Rotation:		1	0	0
+			0	-5.96046e-007	1
+			0	-1	-5.96046e-007
+	Covering:		SIMPLE_COLOR	255	106	34
+	Name:		"End"
+	Mass:		1
+	Parameters:	0.8	0.45	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	-6.70552e-008	0	0
+	Rotation:		1	0	0
+			0	-5.96046e-007	1
+			0	-1	-5.96046e-007
+	Covering:		SIMPLE_COLOR	255	106	34
+	Name:		"End"
+	Mass:		1
+	Parameters:	0.8	0.45	20	0	1

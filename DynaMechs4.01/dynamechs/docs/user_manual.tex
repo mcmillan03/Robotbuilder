@@ -1,0 +1,106 @@
+\documentclass[11pt]{article}
+
+\usepackage{latexsym, amssymb}
+\usepackage{epsf}
+\usepackage{fancyheadings}
+
+\title{{\bf \Large DynaMechs 2.1 User's Guide}}
+\author{Written by: Scott McMillan}
+
+\begin{document}
+
+\headsep = 23pt
+
+\pagestyle{fancy}
+\lhead{DynaMechs 2.1}
+\rhead{User's Guide}
+
+% ==========================================================================
+
+\maketitle
+
+\vfill
+\abstract{This is the abstract}
+
+\clearpage
+
+% ==========================================================================
+
+\thispagestyle{fancy}
+
+\tableofcontents
+
+\clearpage
+
+% ==========================================================================
+%\spacingset{1.2}
+
+\section{Overview}
+\cite{mcm96}
+
+% ==========================================================================
+
+\section{Installing the Software}
+\subsection{DynaMechs Library}
+\subsection{Example Programs}
+
+% ==========================================================================
+
+\section{Software Design Overview}
+
+\begin{figure}[p]
+\epsfxsize = 5.5in
+\centerline{\epsffile{hierarchies_2.1.ps}}
+\caption{DynaMechs class design. \label{class_hierarchy_fig}}
+\end{figure}
+
+\subsection{Class Hierarchy}
+\subsection{Object Hierarchy}
+
+% ==========================================================================
+
+\section{Kinematic Modelling}
+\subsection{Reference Member}
+\subsection{Branching}
+\subsection{MDH Parameters}
+\subsection{Spherical Joint Parameters}
+
+% ==========================================================================
+
+\section{Dynamic Modelling}
+\subsection{Dynamic Parameters}
+\subsection{Hydrodynamic Parameters}
+
+% ==========================================================================
+
+\section{Building a {\tt dmSystem}}
+\subsection{System}
+\subsection{Reference Member}
+\subsection{Articulation}
+\subsection{Links}
+\subsection{Contact Models}
+\subsection{Environment}
+\subsection{A Configuration Loader}
+
+% ==========================================================================
+
+\section{Simulating a {\tt dmSystem}}
+\subsection{Integrator}
+
+% ==========================================================================
+
+\section{Rendering the {\tt dmSystem}}
+\subsection{Providing the {\tt draw} functions}
+\subsection{OpenGL Example}
+
+% ==========================================================================
+
+\section{Advanced Topics}
+\subsection{Adding New Link Types}
+\subsection{Adding New Contact Models}
+
+% ==========================================================================
+\bibliographystyle{plain}
+\bibliography{myref,robotics}
+
+\end{document}

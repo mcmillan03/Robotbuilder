@@ -1,0 +1,614 @@
+Format:	1
+BackgroundColor:	0	128	192
+UseUserSuppliedDataForPhysicalData: FALSE
+NumPrimitives:	61
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	0.205	-0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_side1"
+	Mass:		0.151163
+	Parameters:	0.5	0.01	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	-0.205	0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_side2"
+	Mass:		0.151163
+	Parameters:	0.5	0.01	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	-0.205	-0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_side2"
+	Mass:		0.151163
+	Parameters:	0.5	0.01	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	0.205	0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_side1"
+	Mass:		0.151163
+	Parameters:	0.5	0.01	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.245	0	0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_cross1"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.245	0	-0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_cross6"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.245	0	0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_cross6"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.215	0	-0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_cross5"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.015	0	-0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_cross4"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.015	0	0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_cross4"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.015	0	0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_cross3"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.015	0	-0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_cross3"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.215	0	-0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_cross2"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.215	0	0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_cross2"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.245	0	-0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_cross1"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.215	0	0.025
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_cross5"
+	Mass:		0.123953
+	Parameters:	0.01	0.41	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.245	-0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_18"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.23	-0.24	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_17"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.215	-0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_16"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.015	-0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_15"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	-0.24	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_14"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.015	-0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_13"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.215	-0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_12"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.23	-0.24	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_11"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.245	-0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_10"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.245	0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_09"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.23	0.24	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_08"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.215	0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_07"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.015	0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_06"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	0.24	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_05"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.015	0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_04"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.215	0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_03"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.23	0.24	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_02"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.245	0.205	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"v_01"
+	Mass:		0.012093
+	Parameters:	0.01	0.01	0.04	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.2375	-0.225	0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext12"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.2225	-0.225	0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext11"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.2375	-0.225	-0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext07"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.2225	-0.225	0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext08"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.0075	-0.225	0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext09"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.0075	-0.225	0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext10"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.2375	-0.225	0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext07"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.2225	-0.225	-0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext08"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.0075	-0.225	-0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext09"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.0075	-0.225	-0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext10"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.2225	-0.225	-0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext11"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.2375	-0.225	-0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext12"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.2225	0.225	0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext02"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.2375	0.225	0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext01"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.0075	0.225	-0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext04"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.0075	0.225	-0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext03"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.2375	0.225	0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext06"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.2225	0.225	0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext05"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.2375	0.225	-0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext01"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.2225	0.225	-0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext02"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	0.0075	0.225	0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext03"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.0075	0.225	0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"t_ext04"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.2225	0.225	-0.025
+	Rotation:		0.906308	0.422618	0
+			-0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext05"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.2375	0.225	-0.025
+	Rotation:		0.906308	-0.422618	0
+			0.422618	0.906308	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	192	192	192
+	Name:		"b_ext06"
+	Mass:		0.012093
+	Parameters:	0.01	0.04	0.01	0
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0.23	0	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	73	73	73
+	Name:		"front_axle"
+	Mass:		1e-006
+	Parameters:	0.5	0.005	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0	0	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	73	73	73
+	Name:		"mid_axle"
+	Mass:		1e-006
+	Parameters:	0.5	0.005	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	-0.23	0	0
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	73	73	73
+	Name:		"rear_axle"
+	Mass:		1e-006
+	Parameters:	0.5	0.005	20	0	1

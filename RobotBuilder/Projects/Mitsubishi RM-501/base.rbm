@@ -1,0 +1,74 @@
+Format:	1
+BackgroundColor:	125	158	192
+UseUserSuppliedDataForPhysicalData: TRUE
+NumPrimitives:	7
+BLOCK
+	Scale:		1	1	1
+	Translation:	0	0	-1.75
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	60	60	60
+	Name:		"Base"
+	Mass:		1
+	Parameters:	1	1.25	1.5	0
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0	0	-1.175
+	Rotation:		1	0	0
+			0	-5.96046e-007	1
+			0	-1	-5.96046e-007
+	Covering:		SIMPLE_COLOR	60	60	60
+	Name:		"Center"
+	Mass:		1
+	Parameters:	0.65	0.3	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0.4	-0.4	-1.22
+	Rotation:		1	0	0
+			0	-5.96046e-007	1
+			0	-1	-5.96046e-007
+	Covering:		SIMPLE_COLOR	60	60	60
+	Name:		"Rod"
+	Mass:		1
+	Parameters:	0.5	0.05	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	-0.4	0.4	-1.22
+	Rotation:		1	0	0
+			0	-5.96046e-007	1
+			0	-1	-5.96046e-007
+	Covering:		SIMPLE_COLOR	60	60	60
+	Name:		"Rod"
+	Mass:		1
+	Parameters:	0.5	0.05	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	-0.4	-0.4	-1.22
+	Rotation:		1	0	0
+			0	-5.96046e-007	1
+			0	-1	-5.96046e-007
+	Covering:		SIMPLE_COLOR	60	60	60
+	Name:		"Rod"
+	Mass:		1
+	Parameters:	0.5	0.05	20	0	1
+CYLINDER
+	Scale:		1	1	1
+	Translation:	0.4	0.4	-1.22
+	Rotation:		1	0	0
+			0	-5.96046e-007	1
+			0	-1	-5.96046e-007
+	Covering:		SIMPLE_COLOR	60	60	60
+	Name:		"Rod"
+	Mass:		1
+	Parameters:	0.5	0.05	20	0	1
+BLOCK
+	Scale:		1	1	1
+	Translation:	-0.5	0	-2
+	Rotation:		1	0	0
+			0	1	0
+			0	0	1
+	Covering:		SIMPLE_COLOR	60	60	60
+	Name:		"Block"
+	Mass:		1
+	Parameters:	2	2	1	0

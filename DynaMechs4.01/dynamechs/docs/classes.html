@@ -1,0 +1,143 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.61 [en] (X11; I; Linux 2.2.11 i686) [Netscape]">
+   <meta name="Author" content="Scott McMillan">
+   <title>DynaMechs Class Hierarchy</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#00708F" vlink="#990066" alink="#DD0000">
+
+<center>
+<h1>
+<b>DynaMechs Class Hierarchy</b></h1></center>
+The class hierarchy is as follows (indentation indicates subclassing):
+<ul>
+<li>
+<b>dmObject</b> - base class containing name and generic user data support</li>
+
+<ul>
+<li>
+<b>dmSystem</b> - abstract bases class for all simulated systems</li>
+
+<ul>
+<li>
+<b>dmEnvironment</b> - encapsulates information about the environment (e.g.
+gravity, prismatic terrain, hydrodynamic parameters, etc.).  For hydrodynamic
+simulation, the fluid acceleration can be set and integrated to compute fluid
+velocity</li>
+
+<ul>
+<li>
+<b>dmTreadmill</b> - has a treadmill that can be simulated</li>
+</ul>
+</ul>
+
+<ul>
+<li>
+<b>dmArticulation</b> - contains tree topology information for system</li>
+
+<ul>
+<li>
+<b>dmClosedArticulation</b> - articulations with closed loops</li>
+</ul>
+</ul>
+
+<li>
+<b>dmLink</b>(dmTransform) - abstract base class for all transformations
+in the system</li>
+
+<ul>
+<li>
+<b>dmStaticRootLink</b> - a full transform (constant) in the inertial frame
+(should only be the first link).</li>
+
+<li>
+<b>dmZScrewTxLink</b> - an constant axial screw transfrom.</li>
+
+<li>
+<b>dmRigidBody</b> - container for dynamic (and hydrodynamic) properties
+for a rigid body, and a set of dmForce objects (if desired).</li>
+
+<ul>
+<li>
+<b>dmMobileBaseLink</b> - equations for 6 DOF (full) motion</li>
+
+<li>
+<b>dmSphericalLink</b> - equations for 3 revolute DOFs (full rotational
+freedom)</li>
+
+<li>
+<b>dmQuaternionLink</b> - equations for 3 revolute DOFs using quaternion
+math (to avoid gimbal lock problems).</li>
+
+<li>
+<b>dmMDHLink</b> - abstract base class and equations for 1 DOF joints specified
+using Modified Denavit-Hartenberg parameters</li>
+
+<ul>
+<li>
+<b>dmRevoluteLink</b> - 1 DOF rotational link</li>
+
+<li>
+<b>dmPrismaticLink</b> - 1 DOF translational link</li>
+</ul>
+</ul>
+</ul>
+
+<li>
+<b>dmSecondaryJoint</b> - secondary joints in a closed-loop</li>
+
+<ul>
+<li>
+<b>dmSecondaryRevoluteJoint</b> - 1 DOF revotational secondary joint</li>
+
+<li>
+<b>dmSecondaryPrismaticJoint</b> - 1 DOF translational secondary joint</li>
+
+<li>
+<b>dmSecondarySphericalJoint</b> - 3 rotational DOFs in a secondary joint</li>
+</ul>
+
+<li>
+<b>dmActuator</b> - abstract base class for actuators</li>
+
+<ul>
+<li>
+<b>dmRevDCMotor</b> - simulations electro-mechanical characteristics of
+DC motor and gears.</li>
+</ul>
+
+<li>
+<b>dmForce</b> - abstract class for force models; contained by the dmRigidBody
+class</li>
+
+<ul>
+<li>
+<b>dmContactModel</b> - computes a compliant point contact force with prismatic
+terrain</li>
+
+<li>
+<b>dmSecondaryForce</b> - secondary joint compliant force class.</li>
+</ul>
+
+<li>
+<b>dmIntegrator</b> - abstract base class for all integrators; contains a list
+of dmSystem objects to be simulated.</li>
+
+<ul>
+<li>
+<b>dmIntegEuler</b> - first order euler integrator</li>
+
+<li>
+<b>dmIntegRK4</b> - 4th order Runge-Kutta integrator</li>
+
+<li>
+<b>dmIntegRK45</b> - adaptive stepsize embedded fourth/fifth order Runge-Kutta
+integrator</li>
+</ul>
+</ul>
+</ul>
+
+</body>
+</html>

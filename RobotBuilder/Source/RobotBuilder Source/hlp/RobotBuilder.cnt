@@ -1,0 +1,15 @@
+:Base RobotBuilder.hlp
+1 Menus
+2 CFG menu=menu_cfg_file
+2 Articulation Menu=menu_articulation
+2 Environment Menu=menu_environment
+2 Control Menu=menu_control
+2 Playback Menu=menu_playback
+2 View Menu=menu_view
+2 Help menu=menu_help
+1 Overview
+2 RobotBuilder Overview=overview_robotbuilder
+2 Sample: Mitsubishi RM501=overview_mitsu_sample
+2 Camera Control=overview_camera_control
+2 Control DLL=overview_control_dll
+2 DynaMechs 4.0 Overview=overview_dynamechs

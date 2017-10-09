@@ -1,0 +1,24 @@
+CXXFLAGS := -O2 -s -mips4 -r5000 -TARG:processor=r5000 -n32 -no_auto_include -ptused -fullwarn -woff 1375 -woff 1209 -woff 1468 -LANG:ansi-for-init-scope=on -OPT:Olimit=10000 -c -D_SGI_MP_SOURCE -D_PTHREADS
+DEPENDFLAGS := $(CXXFLAGS)
+
+LDFLAGS := -mips4 -r5000 -TARG:processor=r5000 -L/usr/lib32/internal -Wl,-woff,84 -lpthread -lGLU -lGL -lXmu -lX11 -lm
+LDGLUT := -lglut
+
+CXX := CC
+LINKER := CC
+SHLINKER := CC
+
+SHLKFLAG := -shared -update_registry $(libdir)/so_locations
+
+space :=
+OBJNAMEARG := -o $(space)
+EXENAMEARG := -o $(space)
+SHLNAMEARG := -o $(space)
+LINKDIRARG := -L
+LINKLIBARG := -l
+LINKLIBSFX :=
+
+LIBSFX := so
+LIBPFX := lib
+EXESFX := exe
+OBJSFX := o

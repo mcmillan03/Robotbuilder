@@ -1,0 +1,17 @@
+For version 4.0 (over 3.0)
+
+New features:
+ - dmClosedArticulation, dmSecondaryForce, dmSecondaryJoint, etc classes for
+     closed chain simulation
+ - new dmQuaternionLink with 3 revolute DOFs (link dmSphericalLink only
+     more robust)
+ - new dmStaticRootLink to move the reference system to new location
+ - Added ability to simulate accurately across contact boundaries (changes to
+     contact model, forces, and integrators).
+ - Making dmSystem a base class for generic dynamic systems that need to be
+     simulated (base class for dmArticulation and dmEnvironment).
+ - Adding ability of a single dmIntegrator to numerically integrate more than
+     one dmSystem
+ - Adding two types of dynamic environments: dmHydroEnvironment and
+     dmTreadmill
+ - Added Dev Studio Workspace and Project files

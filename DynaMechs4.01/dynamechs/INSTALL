@@ -1,0 +1,169 @@
+                             DynaMechs
+              A Multibody Dynamics Simulation Library
+
+                 (c) 1994 - 2001 by Scott McMillan
+
+INTRODUCTION
+
+This is a set of cross-platform C++ libraries licensed under the Gnu's GPL
+(see LICENSE) which implements dynamic simulation functionality for multibody
+systems.  It currently supports all tree structured mechanism, a class of
+closed chain mechanisms as well.  It has provisions for generating both
+single and double precision version, and there is code for simplified
+hydrodynamic simulation.
+
+This work is an extension of my Ph.D. dissertation, "Computational Dynamics
+for Robotic Systems on Land and Underwater," The Ohio State University, 1994,
+and continued at the Naval Postgraduate School.
+
+The closed chain work is derived from Duane Marhefka's Ph.D. dissertation,
+"Fuzzy Control and Dynamic Simulation of a Quadruped Galloping Machine," The
+Ohio State University, 2000.
+
+DOWNLOADING
+
+Log into sourceforge and check out the DynaMechs source tree.  This
+distribution consists of the following files/directories
+
+Makefile        - top level makefile
+make/           - all of the files need to build versions of the Dynamechs
+                  libraries for all of the supported platforms 
+dm/             - the DynaMechs source code
+dmu             - source code for miscellaneous utilities
+demos/dmGL      - GLUT-based mouse and camera utilities for test programs
+demos/testdm    - simple test programs
+demos/models    - data for the test programs
+demos/aquarobot - my hexapod project simulator for OSU and NPS
+demos/mesh      - Duanes simple example of closed-chain systems.
+
+SOFTWARE REQUIREMENTS
+
+DynaMechs is built on top of OpenGL v1.1 or later.  A free version, called
+Mesa, can be downloaded from http://www.mesa3d.org.  It currently also
+requires GLUT (OpenGL Utility Toolkit) v 3.6 or later which can be downloaded
+with the Mesa demos distribution or from its own site here.  To build with
+the provided makefiles GNU make v3.77 or later is required.  Finally, a
+"current" C++ compiler is also recommended.  I use MIPSPro 7.3.x on IRIX,
+VC++ 6.0 on NT with all the latest DevStudio Service Paks applied, g++
+2.91.66 that came with RedHat 6.0 Mandrake distribution, and g++ 2.95.1 and
+2.95.2 on Solaris.  This does not mean other compilers won't work, but I have
+had problems with earlier versions (e.g., g++ 2.7.2 and 2.8.1 if memory
+serves).  If you are building on an NT platform, you can only use the
+provided makefiles if you install the Cygwin tools (a bash environment for
+Windows) from Cygnus.
+
+NOTE to Microsoft Dev Studio Users: As of release 4.0, a workspace and
+project files have been included with the distribution in the make.msdev
+subdirectory.&nbsp; You will not need Cygwin tools or GNU make 3.77 to
+build the windows version of the libraries.
+
+You will need a copy of DOC++ to compile the documentation yourself (although
+a Postscript version is provided with this distribution).
+
+If you discover any other requirements let me know.
+
+
+COMPILING
+
+A feature of this make environment is that multiple platforms can be built
+for the same source tree at the same time by mounting the source tree in the
+filesystems on multiple platforms (or debug and optimized versions can
+coexist).  The currently supported plaforms are:
+
+     linux.i686[.dbg]          (Only tested on Redhat 6.0 Mandrake)
+     irix65.r5[.dbg]
+     mippstd.r5[.dbg]
+     solaris551.sparcv8[.dbg]
+     solaris57.sparcv8[.dbg]
+     solaris58.sparcv8[.dbg]
+     vizc.x86[.dbg]            (Visual C++ 6.0 (SP4) on NT 4.0)
+     msvc60.i686[.dbg]          (Microsoft Dev Studio generated files)
+
+There is a file corresponding to each of these platforms in the make
+directory called make.platform.<platform>.  All modifications to the default
+configuration should be made here.  Please email bug reports if you encounter
+problems with the various configurations.  Please email new files if you port
+to a different platform.
+
+If you have libraries in non-standard places, you may need to edit the
+appropriate make.platform.<platform> file in the make directory.  For
+instance, I run many versions of Mesa on my Linux system and you can
+define OPENGLLIBDIR and OPENGLINCDIR to point to the appropriate directories
+to compiler and link with your favorite version of OpenGL.  Also if you
+are using the old Mesa libs that were installed as libMesaGL.so and
+libMesaGLU.so then you need to set a MESA environment variable to 'Mesa' as
+follows (for tcsh):
+
+     > setenv OPENGLLIBDIR /usr/local/lib
+     > setenv OPENGLINCDIR /usr/local/include
+     > setenv MESA Mesa
+
+or (for bash):
+
+     > export OPENGLLIBDIR=/usr/local/lib
+     > export OPENGLINCDIR=/use/local/include
+     > export MESA=Mesa
+
+There are two ways to build the for a given platform.  If you don't plan on
+doing code development, cd to the directory containing the top-level Makefile
+(the top dynamechs directory) and type:
+
+     > make <platform>
+
+where <platform> is one of the platform strings listed above.  This should
+compile all of the source, create all of the shared libraries, and compile
+and link all of the test programs.  Three new directories are created to hold
+these as follows:
+
+   ./obj/platform.<platform> - the obj files
+   ./lib/platform.<platform> - the shared libraries
+   ./bin/platform.<platform> - the test programs
+
+Note, that because each platform has their own directory.  Builds for
+multiple platforms can be performed simultaneously.  Be sure to set your
+LD_LIBRARY_PATH to include the appropriate ./lib/platform.<platform>
+directory.
+
+If you plan to develop DM code then it is recommended that you set the
+DM_PLATFORM environment variable to specify which platform you are building
+on.  Depending on your shell, this is either done with
+
+     > setenv DM_PLATFORM <platform>   (tcsh)
+
+or
+
+     > export DM_PLATFORM=<platform>  (bash)
+
+Change to the directory containing the top-level Makefile and type:
+
+     > make
+
+The <platform> specification is not needed on the command line.  With the
+DM_PLATFORM environment variable set, you can now perform builds in the
+various subdirectories (dm, dmu, testdm...).
+
+
+COMPILING WITH THE DEVELOPER STUDIO
+
+If you want to use the workspace and project files load the DYNAMECHS.DSW
+file into the Developer Studio application and build the need projects.  Both
+opt (Release) and dbg (Debug) settings have been configured.  The convention
+for the location of object, library, and executable files are the same as for
+the other platforms described in the section on COMPILING.  The platform
+string for this build is msvc60.i686[.dbg], so the object files will be
+written to obj/platform.msvc60.i686[.dbg], the library files will be written
+to lib/platform.msvc60.i686[.dbg], and the executables will be written to
+bin/platform.msvc60.i686[.dbg].  Note: I am not an expert in using the
+Developer Studio, so some PATH problems may still persist for running some of
+the test programs.
+
+
+INSTALLING
+
+There is currently no install target in the Makefile.  Header files can be
+copied from the dm, dmu, and dmGL directories to a location of your choice.
+Libraries can be copied to a convenient location as well (note that debug and
+optimized libraries have the same name so they cannot be placed in the same
+directory currently.  Note to Windoze users:  the dlls must be placed in a
+directory that is included in the PATH environment variable in order for
+applications to be able to find them.

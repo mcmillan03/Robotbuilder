@@ -1,0 +1,44 @@
+/**@name DynaMechs Simulation Library
+ * 
+ * @memo	Reference Manual
+ * @version	4.0
+ * @author	Scott McMillan, Duane Marhefka
+ */
+//@{
+    //@Include: ../dm/dmActuator.hpp
+    //@Include: ../dm/dmArticulation.hpp
+    //@Include: ../dm/dmClosedArticulation.hpp
+    //@Include: ../dm/dmContactModel.hpp
+    //@Include: ../dm/dmEnvironment.hpp
+    //@Include: ../dm/dmForce.hpp
+    //@Include: ../dm/dmIntegrator.hpp
+    //@Include: ../dm/dmIntegEuler.hpp
+    //@Include: ../dm/dmIntegRK4.hpp
+    //@Include: ../dm/dmIntegRK45.hpp
+    //@Include: ../dm/dmLink.hpp
+    //@Include: ../dm/dmMDHLink.hpp
+    //@Include: ../dm/dmMobileBaseLink.hpp
+    //@Include: ../dm/dmObject.hpp
+    //@Include: ../dm/dmPrismaticLink.hpp
+    //@Include: ../dm/dmQuaternionLink.hpp
+    //@Include: ../dm/dmRevDCMotor.hpp
+    //@Include: ../dm/dmRevoluteLink.hpp
+    //@Include: ../dm/dmRigidBody.hpp
+    //@Include: ../dm/dmSecondaryForce.hpp
+    //@Include: ../dm/dmSecondaryJoint.hpp
+    //@Include: ../dm/dmSecondaryPrismaticJoint.hpp
+    //@Include: ../dm/dmSecondaryRevoluteJoint.hpp
+    //@Include: ../dm/dmSecondarySphericalJoint.hpp
+    //@Include: ../dm/dmSphericalLink.hpp
+    //@Include: ../dm/dmStaticRootLink.hpp
+    //@Include: ../dm/dmSystem.hpp
+    //@Include: ../dm/dmZScrewTxLink.hpp
+    //@Include: ../dmu/dmu.h
+    //@Include: ../dmu/dmLoader.hpp
+    //@Include: ../dmu/dmLoader_dm.hpp
+    //@Include: ../dmu/dmLoader_dm203.hpp
+    //@Include: ../dmu/dmLoader_dm21.hpp
+    //@Include: ../dmu/dmLoader_dm30.hpp
+    //@Include: ../dmu/dmLoader_dm40.hpp
+    //@Include: ../dmu/dmLoader_env.hpp
+//@}

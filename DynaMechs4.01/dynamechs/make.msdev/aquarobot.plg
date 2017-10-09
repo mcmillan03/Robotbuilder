@@ -1,0 +1,82 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: aquarobot_gait - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP29E.tmp" with contents
+[
+/nologo /G6 /MDd /W3 /GR /GX /ZI /Od /I "..\aquarobot" /D "aquarobot_DLL_FILE" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fo"../obj/platform.msvc60.i686.dbg/" /Fd"../obj/platform.msvc60.i686.dbg/" /FD /GZ /c 
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\Body.cpp"
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\EulerAng.cpp"
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\GaitAlgorithm.cpp"
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\Leg.cpp"
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\LegLink.cpp"
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\MatrixMy.cpp"
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\Posture.cpp"
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\Robot.cpp"
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\Vector.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP29E.tmp" 
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP29F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wsock32.lib /nologo /dll /incremental:yes /pdb:"../lib/platform.msvc60.i686.dbg/aquarobot_gait.pdb" /debug /machine:I386 /out:"../lib/platform.msvc60.i686.dbg/aquarobot_gait.dll" /implib:"../lib/platform.msvc60.i686.dbg/aquarobot_gait.lib" /pdbtype:sept /libpath:"../lib/platform.msvc60.i686.dbg" 
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\Body.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\EulerAng.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\GaitAlgorithm.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\Leg.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\LegLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\MatrixMy.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\Posture.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\Robot.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\Vector.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP29F.tmp"
+<h3>Output Window</h3>
+Compiling...
+Body.cpp
+EulerAng.cpp
+GaitAlgorithm.cpp
+Leg.cpp
+LegLink.cpp
+MatrixMy.cpp
+Posture.cpp
+Robot.cpp
+Vector.cpp
+Generating Code...
+Linking...
+   Creating library ../lib/platform.msvc60.i686.dbg/aquarobot_gait.lib and object ../lib/platform.msvc60.i686.dbg/aquarobot_gait.exp
+<h3>
+--------------------Configuration: aquarobot - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP2A3.tmp" with contents
+[
+/nologo /G6 /MDd /W3 /GR /GX /Z7 /Od /Ob1 /I "..\aquarobot" /I "..\dm" /I "..\dmu" /I "..\dmGL" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_WINDOWS" /Fo"../obj/platform.msvc60.i686.dbg/" /Fd"../obj/platform.msvc60.i686.dbg/" /FD /GZ /TP /c 
+"C:\Projects\School\DynaMechs4.0\dynamechs\aquarobot\aquarobot.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP2A3.tmp" 
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP2A4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib Opengl32.lib wsock32.lib Glu32.lib glut32.lib dm.lib dmu.lib dmGL.lib aquarobot_gait.lib /nologo /subsystem:console /incremental:yes /pdb:"../bin/platform.msvc60.i686.dbg/aquarobot.pdb" /debug /machine:I386 /out:"../bin/platform.msvc60.i686.dbg/aquarobot.exe" /pdbtype:sept /libpath:"../lib/platform.msvc60.i686.dbg" 
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\aquarobot.obj
+\Projects\School\DynaMechs4.0\dynamechs\lib\platform.msvc60.i686.dbg\aquarobot_gait.lib
+\Projects\School\DynaMechs4.0\dynamechs\lib\platform.msvc60.i686.dbg\dm.lib
+\Projects\School\DynaMechs4.0\dynamechs\lib\platform.msvc60.i686.dbg\dmGL.lib
+\Projects\School\DynaMechs4.0\dynamechs\lib\platform.msvc60.i686.dbg\dmu.lib
+]
+Creating command line "link.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP2A4.tmp"
+<h3>Output Window</h3>
+Compiling...
+aquarobot.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+aquarobot.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

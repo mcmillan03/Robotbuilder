@@ -1,0 +1,20 @@
+treadmill changes
+
+
+dm.h
+- added some general utility functions that are utilized in the treadmill code.  If
+you would prefer, we can just make them local to dmTreadmill, but they seem like
+they would be useful in other circumstances, so I placed them here with some other
+general utility functions.
+
+dmTreadmill.h/.cpp
+- revamped to support treadmill
+- in some aspects this is incomplete - see todo section in header
+
+dmContactModel.h/.cpp
+- not really happy with the result -- seems like there should be a more elegant
+approach.  The contact model has dependencies on the environment type which
+should be handled differently than the 'if' statements that are used.  We can't
+really create a new class though, because the environment might not be known
+when the class is created (which occurs during file parsing if a .dm is used)
+	

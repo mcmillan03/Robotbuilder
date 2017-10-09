@@ -1,0 +1,918 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RBModeler.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\RBModeler.ico"
+IDR_RBMODLTYPE          ICON    DISCARDABLE     "res\\RBModelerDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_IMAGELIST           BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_PRIMITIVE_SPHERE    BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_AXES                BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_PRIMITIVE_CYLINDER  BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_PRIMITIVE_CONE      BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+IDB_PRIMITIVE_TRUNCATED_CONE BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+IDB_PRIMITIVE_HEMISPHERE BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
+IDB_PRIMITIVE_BLOCK     BITMAP  DISCARDABLE     "res\\bmp00007.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_BUTTON_VIEW_FRONT
+    BUTTON      ID_BUTTON_VIEW_RIGHT
+    BUTTON      ID_BUTTON_VIEW_BACK
+    BUTTON      ID_BUTTON_VIEW_LEFT
+    BUTTON      ID_BUTTON_VIEW_BOTTOM
+    BUTTON      ID_BUTTON_VIEW_TOP
+    SEPARATOR
+    BUTTON      ID_BUTTONPAN
+    BUTTON      ID_BUTTONEXAMINE
+    SEPARATOR
+    BUTTON      ID_BUTTON_ZOOM_IN
+    BUTTON      ID_BUTTON_ZOOM_OUT
+    SEPARATOR
+    BUTTON      ID_BUTTON_TOGGLE_AXES
+    BUTTON      ID_BUTTON_SHOW_LOCAL_AXES
+    BUTTON      ID_BUTTON_HIDE_LOCAL_AXES
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Set &Background Color...",    ID_FILE_SETBACKGROUNDCOLOR
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Camera Control...",          ID_VIEW_CAMERACONTROL
+        MENUITEM "Camera &Light",               ID_VIEW_CAMERALIGHT
+    END
+    POPUP "&Primitives"
+    BEGIN
+        POPUP "&Add"
+        BEGIN
+            MENUITEM "&Block",                      ID_PRIMITIVES_ADD_BLOCK
+            MENUITEM "&Cone",                       ID_PRIMITIVES_ADD_CONE
+            MENUITEM "C&ylinder",                   ID_PRIMITIVES_ADD_CYLINDER
+
+            MENUITEM "&Hemisphere",                 ID_PRIMITIVES_ADD_HEMISPHERE
+
+            MENUITEM "&Sphere",                     ID_PRIMITIVES_ADD_SPHERE
+            MENUITEM "&Truncated Cone",             ID_PRIMITIVES_ADD_TRUNCATEDCONE
+
+        END
+    END
+    POPUP "P&roperties"
+    BEGIN
+        MENUITEM "&Physical Properties...",     ID_PROPERTIES_PHYSICALPROPERTIES
+
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&User's Guide",               ID_HELP_USERSGUIDE
+        MENUITEM "&Example System Tutorial",    ID_HELP_TUTORIAL
+        MENUITEM SEPARATOR
+        MENUITEM "&About RobotModeler...",      ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 290, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RobotModeler"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    DEFPUSHBUTTON   "OK",IDOK,233,7,50,14,WS_GROUP
+    LTEXT           "RobotModeler - Version 1.0",IDC_STATIC,40,20,119,8,
+                    SS_NOPREFIX
+    LTEXT           "The Ohio State University",IDC_STATIC,40,32,82,8
+    LTEXT           "For more information about RobotModeler, please go to:",
+                    IDC_STATIC,40,76,175,8
+    LTEXT           "http://eewww.eng.ohio-state.edu/~orin/RobotBuilder/RobotBuilder.html",
+                    IDC_LINK_ROBOTBUILDER_WEBSITE,40,86,228,8
+    LTEXT           "Other Credits:",IDC_STATIC,40,134,44,8
+    LTEXT           "* Giancarlo Iovino for ",IDC_STATIC,40,143,67,8
+    LTEXT           "CHyperLink class",IDC_LINK_HYPERLINK_CLASS,107,143,56,8
+    LTEXT           ".",IDC_STATIC,163,143,8,8
+    LTEXT           "Submit bug reports to:",IDC_STATIC,40,108,70,8
+    LTEXT           "robotbuilderbugs@yahoo.com",IDC_LINK_BUG_EMAIL,112,108,
+                    95,8
+    LTEXT           "Developed by Steven Rodenbaugh for his Master's Thesis",
+                    IDC_STATIC,40,49,184,8
+    LTEXT           "Modified by Luke Frankart for his Bachelor's Thesis",
+                    IDC_STATIC,39,58,161,8
+    LTEXT           "* Professor Roger Quinn and his students at Case Western Reserve University for help with developing the simplified Whegs model used in the tutorial.",
+                    IDC_STATIC,40,153,202,31
+END
+
+IDD_MOVEMENT_CONTROLS DIALOG DISCARDABLE  0, 0, 115, 192
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Adjustment Type",IDC_STATIC,18,6,86,52
+    CONTROL         "Translate",IDC_RADIO_TRANSLATE,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,26,17,45,10
+    CONTROL         "Rotate (degrees)",IDC_RADIO_ROTATE,"Button",
+                    BS_AUTORADIOBUTTON,26,27,71,10
+    CONTROL         "Spatial Transform",IDC_RADIO_SPATIAL_TRANSFORM,"Button",
+                    BS_AUTORADIOBUTTON,26,37,71,10
+    CONTROL         "Scale",IDC_RADIO_SCALE,"Button",BS_AUTORADIOBUTTON,26,
+                    47,34,10
+    LTEXT           "Step Size:",IDC_STATIC,17,66,33,8
+    EDITTEXT        IDC_EDIT_STEP_SIZE,51,63,54,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_STEP_SIZE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS,94,63,11,14
+    LTEXT           "Adjust With Respect To:",IDC_STATIC,19,84,78,8
+    CONTROL         "",IDC_STATIC_COMBO_RECT,"Static",SS_GRAYRECT | NOT 
+                    WS_VISIBLE,10,94,96,49
+    GROUPBOX        "Adjustment Direction",IDC_STATIC,10,114,97,71
+    PUSHBUTTON      "X +",IDC_BUTTON_X_POSITIVE,18,131,39,14
+    PUSHBUTTON      "X -",IDC_BUTTON_X_NEGATIVE,60,131,39,14
+    PUSHBUTTON      "Y +",IDC_BUTTON_Y_POSITIVE,18,147,39,14
+    PUSHBUTTON      "Y -",IDC_BUTTON_Y_NEGATIVE,60,147,39,14
+    PUSHBUTTON      "Z +",IDC_BUTTON_Z_POSITIVE,18,163,39,14
+    PUSHBUTTON      "Z -",IDC_BUTTON_Z_NEGATIVE,60,163,39,14
+END
+
+IDD_PRIMITIVE_SPHERE DIALOG DISCARDABLE  0, 0, 182, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Sphere Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Radius:",IDC_STATIC,22,20,25,8
+    EDITTEXT        IDC_EDIT_RADIUS,93,17,54,14,ES_AUTOHSCROLL
+    LTEXT           "Latitude Count:",IDC_STATIC,22,40,49,8
+    EDITTEXT        IDC_EDIT_LATITUDE,93,37,54,14,ES_AUTOHSCROLL
+    LTEXT           "Longitude Count:",IDC_STATIC,22,60,55,8
+    EDITTEXT        IDC_EDIT_LONGITUDE,93,57,54,14,ES_AUTOHSCROLL
+    CONTROL         "Render Both Sides",IDC_CHECK_BOTH_SIDES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,82,75,10
+    CONTROL         "Use Gouraud Shading",IDC_CHECK_GOURAUD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,98,86,10
+END
+
+IDD_COVERING DIALOG DISCARDABLE  0, 0, 252, 196
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Covering"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Specify Color",IDC_RADIO_TYPE_COLOR,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,26,17,57,10
+    CONTROL         "Specify a Texture",IDC_RADIO_TEXTURE,"Button",
+                    BS_AUTORADIOBUTTON,25,107,71,10
+    GROUPBOX        "Color Information",IDC_STATIC,19,31,197,60,WS_GROUP
+    GROUPBOX        "Texture Information",IDC_STATIC,23,120,197,59
+    PUSHBUTTON      "Choose a different color ...",IDC_BUTTON_COLOR,51,66,95,
+                    14
+    LTEXT           "Geometry Color:",IDC_STATIC,32,46,51,8
+    PUSHBUTTON      "Browse...",IDC_BUTTON_BROWSE,76,152,50,14
+    LTEXT           "Texture:",IDC_STATIC,29,133,27,8
+    EDITTEXT        IDC_EDIT_TEXTURE,61,131,150,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "",IDC_BUTTON_COLOR_EXAMPLE,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,89,42,20,14
+END
+
+IDD_PLACEMENT DIALOG DISCARDABLE  0, 0, 235, 210
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Placement && Scale"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Scale:",IDC_STATIC,24,17,21,8
+    EDITTEXT        IDC_EDIT_SCALE_X,49,14,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCALE_Y,108,14,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCALE_Z,167,14,54,14,ES_AUTOHSCROLL
+    LTEXT           "Translation:",IDC_STATIC,11,42,38,8
+    EDITTEXT        IDC_EDIT_TRANSLATION_X,49,39,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRANSLATION_Y,108,39,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TRANSLATION_Z,167,39,54,14,ES_AUTOHSCROLL
+    CONTROL         "Tab1",IDC_TAB_ROTATION,"SysTabControl32",0x0,7,73,221,
+                    130
+END
+
+IDD_ROTATION_QUATERNION DIALOG DISCARDABLE  0, 0, 165, 129
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_QUATERNION_1,55,16,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QUATERNION_2,55,38,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QUATERNION_3,55,60,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_QUATERNION_4,55,82,54,14,ES_AUTOHSCROLL
+END
+
+IDD_ROTATION_EULER_ANGLES DIALOG DISCARDABLE  0, 0, 191, 95
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_EULER_X,11,38,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EULER_Y,68,38,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_EULER_Z,125,38,54,14,ES_AUTOHSCROLL
+    LTEXT           "X",IDC_STATIC,34,28,8,8
+    LTEXT           "Y",IDC_STATIC,91,27,8,8
+    LTEXT           "Z",IDC_STATIC,149,28,8,8
+    LTEXT           "Note: XYZ Euler angles are equivalent to ZYX Fixed",
+                    IDC_STATIC,7,63,164,8
+END
+
+IDD_ROTATION_ANGLE_AXIS DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_ANGLE,20,41,54,14,ES_AUTOHSCROLL
+    LTEXT           "Angle (degrees)",IDC_STATIC,22,29,50,8
+    LTEXT           "Axis",IDC_STATIC,125,7,14,8
+    EDITTEXT        IDC_EDIT_AXIS_X,105,20,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AXIS_Y,105,41,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AXIS_Z,105,62,54,14,ES_AUTOHSCROLL
+END
+
+IDD_PRIMITIVE_BLOCK DIALOG DISCARDABLE  0, 0, 186, 188
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Block Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "X Length:",IDC_STATIC,22,20,32,8
+    EDITTEXT        IDC_EDIT_XLENGTH,64,18,54,14,ES_AUTOHSCROLL
+    LTEXT           "Y Length:",IDC_STATIC,22,40,32,8
+    EDITTEXT        IDC_EDIT_YLENGTH,64,38,54,14,ES_AUTOHSCROLL
+    LTEXT           "Z Length:",IDC_STATIC,22,60,32,8
+    EDITTEXT        IDC_EDIT_ZLENGTH,64,58,54,14,ES_AUTOHSCROLL
+    CONTROL         "Render Both Sides",IDC_CHECK_BOTH_SIDES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,82,75,10
+END
+
+IDD_PRIMITIVE_CONE DIALOG DISCARDABLE  0, 0, 149, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cone Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Height:",IDC_STATIC,22,20,24,8
+    EDITTEXT        IDC_EDIT_HEIGHT,64,18,54,14,ES_AUTOHSCROLL
+    LTEXT           "Radius:",IDC_STATIC,22,40,25,8
+    EDITTEXT        IDC_EDIT_RADIUS,64,38,54,14,ES_AUTOHSCROLL
+    LTEXT           "Tesselation:",IDC_STATIC,22,60,39,8
+    EDITTEXT        IDC_EDIT_TESS,64,58,54,14,ES_AUTOHSCROLL
+    CONTROL         "Render Both Sides",IDC_CHECK_BOTH_SIDES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,82,75,10
+END
+
+IDD_PRIMITIVE_CYLINDER DIALOG DISCARDABLE  0, 0, 180, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cylinder Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Radius:",IDC_STATIC,31,12,25,8
+    EDITTEXT        IDC_EDIT_RADIUS,103,9,54,14,ES_AUTOHSCROLL
+    LTEXT           "Height:",IDC_STATIC,31,31,24,8
+    EDITTEXT        IDC_EDIT_HEIGHT,103,28,54,14,ES_AUTOHSCROLL
+    LTEXT           "Tesselation:",IDC_STATIC,31,52,39,8
+    EDITTEXT        IDC_EDIT_TESS,103,49,54,14,ES_AUTOHSCROLL
+    CONTROL         "Render Both Sides",IDC_CHECK_BOTH_SIDES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,31,73,75,10
+    CONTROL         "Use Gouraud Shading",IDC_CHECK_GOURAUD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,31,88,86,10
+END
+
+IDD_PRIMITIVE_HEMISPHERE DIALOG DISCARDABLE  0, 0, 186, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Hemisphere Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Radius:",IDC_STATIC,22,20,25,8
+    EDITTEXT        IDC_EDIT_RADIUS,93,17,54,14,ES_AUTOHSCROLL
+    LTEXT           "Latitude Count:",IDC_STATIC,22,40,49,8
+    EDITTEXT        IDC_EDIT_LATITUDE,93,37,54,14,ES_AUTOHSCROLL
+    LTEXT           "Longitude Count:",IDC_STATIC,22,60,55,8
+    EDITTEXT        IDC_EDIT_LONGITUDE,93,57,54,14,ES_AUTOHSCROLL
+    CONTROL         "Render Both Sides",IDC_CHECK_BOTH_SIDES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,82,75,10
+    CONTROL         "Use Gouraud Shading",IDC_CHECK_GOURAUD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,98,86,10
+END
+
+IDD_PRIMITIVE_TRUNCATED_CONE DIALOG DISCARDABLE  0, 0, 154, 202
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Truncated Cone Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Height:",IDC_STATIC,22,20,24,8
+    EDITTEXT        IDC_EDIT_HEIGHT,75,17,54,14,ES_AUTOHSCROLL
+    LTEXT           "Base Radius:",IDC_STATIC,22,40,43,8
+    EDITTEXT        IDC_EDIT_BASE_RADIUS,75,37,54,14,ES_AUTOHSCROLL
+    LTEXT           "Top Radius:",IDC_STATIC,22,60,40,8
+    EDITTEXT        IDC_EDIT_TOP_RADIUS,75,57,54,14,ES_AUTOHSCROLL
+    CONTROL         "Render Both Sides",IDC_CHECK_BOTH_SIDES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,100,75,10
+    CONTROL         "Use Gouraud Shading",IDC_CHECK_GOURAUD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,116,86,10
+    LTEXT           "Tesselation:",IDC_STATIC,21,81,39,8
+    EDITTEXT        IDC_EDIT_TESS,75,78,54,14,ES_AUTOHSCROLL
+END
+
+IDD_PHYSICAL_PROPERTIES DIALOG DISCARDABLE  0, 0, 235, 262
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Physical Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_MASS,103,28,54,14,ES_AUTOHSCROLL | WS_GROUP
+    GROUPBOX        "Approximate* Local Inertia Tensor",IDC_STATIC,20,107,
+                    196,81
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR11,32,127,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR12,91,127,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR13,150,127,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR21,32,147,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR22,91,147,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR23,150,147,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR31,32,166,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR32,91,166,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR33,150,166,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "Mass:",IDC_STATIC,77,31,20,8
+    LTEXT           "* The inertia tensor given is that of the ideal enclosing primitive.  For example, this implies the inertia tensor of an octahedron (from the sphere primitive), will be calculated as the inertia tensor of its enclosing ellipsoid.  ",
+                    IDC_STATIC,27,207,181,38
+    GROUPBOX        "Center of Gravity in the Link Coordinate Frame",
+                    IDC_STATIC,20,51,196,40
+    EDITTEXT        IDC_EDIT_COG_X,33,68,54,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_COG_Y,92,68,54,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_COG_Z,151,68,54,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_LINK_PHYSICAL_PROPERTIES DIALOG DISCARDABLE  0, 0, 218, 247
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Link Properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,45,226,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,226,50,14
+    GROUPBOX        "Link Inertia Tensor",IDC_STATIC,14,92,188,79
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR11,22,112,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR12,81,112,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR13,140,112,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR21,22,132,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR22,81,132,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR23,140,132,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR31,22,151,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR32,81,151,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_INERTIA_TENSOR33,140,151,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_CENTER_OF_GRAVITY_X,21,58,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_CENTER_OF_GRAVITY_Y,80,58,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_EDIT_CENTER_OF_GRAVITY_Z,138,58,54,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    GROUPBOX        "Link Center of Gravity",IDC_STATIC,16,46,184,37
+    LTEXT           "Link Total Mass:",IDC_STATIC,54,24,53,8
+    EDITTEXT        IDC_EDIT_TOTAL_MASS,122,22,40,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         "Use automatically calculated physical data in RobotBuilder",
+                    IDC_CHECK_USE_USER_DATA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,195,199,10
+END
+
+IDD_CAMERA_CONTROL DIALOG DISCARDABLE  0, 0, 208, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Camera Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,17,145,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,79,145,50,14
+    PUSHBUTTON      "Help",ID_HELP,141,145,50,14
+    CONTROL         "Pan",IDC_RADIO_PAN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,14,29,10
+    CONTROL         "Examine",IDC_RADIO_EXAMINE,"Button",BS_AUTORADIOBUTTON,
+                    13,29,43,10
+    LTEXT           "Offset of actual center of interest from the local coordinate system origin (components in local coordinates)",
+                    IDC_STATIC,25,42,144,28
+    EDITTEXT        IDC_EDIT_OFFSET_X,19,72,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OFFSET_Y,77,72,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_OFFSET_Z,135,72,54,14,ES_AUTOHSCROLL
+    CONTROL         "Update camera relative to viewport frame",
+                    IDC_CHECK_USE_VIEWPORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,27,106,145,10
+    CONTROL         "Set Inertial Axes as the Center of Interest",
+                    IDC_CHECK_INERTIAL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    27,91,144,10
+    CONTROL         "Use Inertial Axes Z as Center of Interest",
+                    IDC_USEINERTIALZ,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    27,121,141,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "RBModeler MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "RBModeler\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "RBModeler.EXE\0"
+            VALUE "ProductName", "RBModeler Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_MOVEMENT_CONTROLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 108
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_PRIMITIVE_SPHERE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_COVERING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_PLACEMENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_ROTATION_QUATERNION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 158
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 122
+    END
+
+    IDD_ROTATION_EULER_ANGLES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_ROTATION_ANGLE_AXIS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PRIMITIVE_BLOCK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 181
+    END
+
+    IDD_PRIMITIVE_CONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 142
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_PRIMITIVE_CYLINDER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_PRIMITIVE_HEMISPHERE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_PRIMITIVE_TRUNCATED_CONE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 195
+    END
+
+    IDD_PHYSICAL_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 255
+    END
+
+    IDD_LINK_PHYSICAL_PROPERTIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 240
+    END
+
+    IDD_CAMERA_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "RobotModeler\n\nRBModl\nRBM Files (*.rbm)\n.rbm\n\n"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RBModeler"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new model\nNew"
+    ID_FILE_OPEN            "Open an existing model\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the current model\nSave"
+    ID_FILE_SAVE_AS         "Save the current model with a new name\nSave As"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information\nAbout"
+    ID_APP_EXIT             "Quit the application\nExit"
+    ID_HELP_FINDER          "List Help topics\nHelp Topics"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this model"
+    ID_FILE_MRU_FILE2       "Open this model"
+    ID_FILE_MRU_FILE3       "Open this model"
+    ID_FILE_MRU_FILE4       "Open this model"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection\nCopy"
+    ID_EDIT_CUT             "Cut the selection\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Paste buffer contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+    ID_VIEW_AUTOARRANGE     "Arrange icons on a grid."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_STRING_OUT_OF_MEM_MSG 
+                            "No available memory.  Application will terminate."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_SMALLICON       "Display items by using small icons.\nSmall Icons"
+    ID_VIEW_LARGEICON       "Display items by using large icons.\nLarge Icons"
+    ID_VIEW_LIST            "Displays items in a list.\nList"
+    ID_VIEW_DETAILS         "Displays detailed information about each item in the window.\nDetails"
+    ID_VIEW_LINEUP          "Arranges icons in a grid."
+    ID_VIEW_BYNAME          "Sorts the icons alphabetically."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_CAMERACONTROL   "Change camera settings"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PRIMITIVES_ADD_SPHERE "Add a Sphere primitive"
+    ID_PRIMITIVES_ADD_BLOCK "Add a Block primitive"
+    ID_PRIMITIVES_ADD_CONE  "Add a Cone primitive"
+    ID_PRIMITIVES_ADD_CYLINDER "Add a Cylinder primitive"
+    ID_PRIMITIVES_ADD_HEMISPHERE "Add a Hemisphere primitive"
+    ID_PRIMITIVES_ADD_TRUNCATEDCONE "Add a Truncated Cone primitive"
+    ID_BUTTON_VIEW_FRONT    "Front View\nFront View"
+    ID_BUTTON_VIEW_RIGHT    "Right View\nRight View"
+    ID_BUTTON_VIEW_BACK     "Back View\nBack View"
+    ID_BUTTON_VIEW_LEFT     "Left View\nLeft View"
+    ID_BUTTON_VIEW_BOTTOM   "Bottom View\nBottom View"
+    ID_BUTTON_VIEW_TOP      "Top View\nTop View"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON_ZOOM_IN       "Zoom in\nZoom in"
+    ID_BUTTON_ZOOM_OUT      "Zoom Out\nZoom Out"
+    ID_BUTTON_SHOW_LOCAL_AXES 
+                            "Show All Local Primitive Axes\nShow All Local Primitive Axes"
+    ID_BUTTON_HIDE_LOCAL_AXES 
+                            "Hide All Local Primitive Axes\nHide All Local Primitive Axes"
+    ID_BUTTON_TOGGLE_AXES   "Toggle Link Axes\nToggle Link Axes"
+    ID_FILE_SETBACKGROUNDCOLOR "Set the background color\nBackground Color"
+    ID_PROPERTIES_PHYSICALPROPERTIES "View properties of the link model"
+    ID_VIEW_CAMERALIGHT     "Toggle the directed light attached to the camera on or off"
+    ID_HELP_USERSGUIDE      "Open the User's Guide\nUser's Guide"
+    ID_HELP_TUTORIAL        "Open the Example System Tutorial\nExample System Tutorial"
+    ID_BUTTONPAN            "Place Camera in Pan Mode\nPan Mode"
+    ID_BUTTONEXAMINE        "Place Camera in Examine Mode\nExamine Mode"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RBModeler.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

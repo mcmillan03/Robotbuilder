@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dm - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP27A.tmp" with contents
+[
+/nologo /G6 /MDd /W3 /GR /GX /Z7 /Od /I "..\dm" /D "dm_DLL_FILE" /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /Fo"../obj/platform.msvc60.i686.dbg/" /Fd"../obj/platform.msvc60.i686.dbg/" /FD /GZ /TP /c 
+"C:\Projects\School\DynaMechs4.0\dynamechs\dm\dmEnvironment.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP27A.tmp" 
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP27B.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wsock32.lib Glu32.lib Opengl32.lib /nologo /dll /incremental:yes /pdb:"../lib/platform.msvc60.i686.dbg/dm.pdb" /debug /machine:I386 /out:"../lib/platform.msvc60.i686.dbg/dm.dll" /implib:"../lib/platform.msvc60.i686.dbg/dm.lib" /pdbtype:sept /libpath:"../lib/platform.msvc60.i686.dbg" 
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmActuator.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmArticulation.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmClosedArticulation.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmContactModel.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmEnvironment.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmForce.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmIntegEuler.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmIntegPlacement.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmIntegrator.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmIntegRK4.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmIntegRK45.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmMDHLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmMobileBaseLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmObject.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmPrismaticLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmQuaternionLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmRevDCMotor.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmRevoluteLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmRigidBody.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmSecondaryForce.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmSecondaryJoint.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmSecondaryPrismaticJoint.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmSecondaryRevoluteJoint.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmSecondarySphericalJoint.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmSphericalLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmStaticRootLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmSystem.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmTreadmill.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\dmZScrewTxLink.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\gldraw.obj
+\Projects\School\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686.dbg\svd_linpack.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSP27B.tmp"
+<h3>Output Window</h3>
+Compiling...
+dmEnvironment.cpp
+Linking...
+<h3>
+--------------------Configuration: crank - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+
+
+
+<h3>Results</h3>
+crank.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,28 @@
+All DynaMechs code with or without an explicit copyright, with the exception
+of LINPAK's SVD source code, is covered by the following copyright:
+
+Copyright (C) 1994-2001 by Scott McMillan.  All Rights Reserved.
+
+This program is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free Software
+Foundation; either version 2 of the License (see ./LICENSE), or (at your
+option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+details.
+
+You should have received a copy of the GNU General Public License along with
+this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+Place, Suite 330, Boston, MA 02111-1307 USA
+
+As a special exception, Scott McMillan gives The Ohio State University
+Electrical Engineering Department permission to link this library with
+RobotBuilder, and distribute the resulting executable, without including the
+source code for the RobotBuilder in any distribution.
+
+Except as contained in this notice, the name of DynaMechs shall not
+be used in advertising or otherwise to promote the sale, use or other
+dealings in this Software without prior written authorization from
+Scott McMillan.

@@ -1,0 +1,14 @@
+------ Build started: Project: dm, Configuration: Release Win32 ------
+
+Linking...
+   Creating library .\../lib/platform.msvc60.i686/dm.lib and object .\../lib/platform.msvc60.i686/dm.exp
+
+Build log was saved at "file://c:\RobotBuilder_Hartono_CD_NET\DynaMechs4.01\dynamechs\obj\platform.msvc60.i686\BuildLog.htm"
+dm - 0 error(s), 0 warning(s)
+
+
+---------------------- Done ----------------------
+
+    Build: 1 succeeded, 0 failed, 0 skipped
+
+

@@ -1,0 +1,8 @@
+// WorldToolKit light file
+ambient
+	int .7
+	amb 1.0 1.0 1.0
+point
+	pos 5 -15 0
+	int 0.3
+	spec .8 .8 .8

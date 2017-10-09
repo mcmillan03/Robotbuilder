@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dm - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSPA7.tmp" with contents
+[
+/nologo /G6 /MD /W3 /GR /GX /O2 /Op /I "..\dm" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "dm_DLL_FILE" /D "NO_DM_DEBUG_PRINTS" /Fo"../obj/platform.msvc60.i686/" /Fd"../obj/platform.msvc60.i686/" /FD /TP /c 
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmContactModel.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\dmTreadmill.cpp"
+"C:\Projects\School2\DynaMechs4.0\dynamechs\dm\gldraw.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSPA7.tmp" 
+Creating temporary file "C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSPA8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wsock32.lib Glu32.lib Opengl32.lib /nologo /dll /incremental:yes /pdb:"../lib/platform.msvc60.i686/dm.pdb" /machine:I386 /out:"../lib/platform.msvc60.i686/dm.dll" /implib:"../lib/platform.msvc60.i686/dm.lib" /libpath:"../lib/platform.msvc60.i686" 
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmActuator.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmArticulation.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmClosedArticulation.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmContactModel.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmEnvironment.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmForce.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegEuler.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegPlacement.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegrator.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegRK4.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmIntegRK45.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmMDHLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmMobileBaseLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmObject.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmPrismaticLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmQuaternionLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmRevDCMotor.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmRevoluteLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmRigidBody.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondaryForce.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondaryJoint.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondaryPrismaticJoint.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondaryRevoluteJoint.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSecondarySphericalJoint.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSphericalLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmStaticRootLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmSystem.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmTreadmill.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\dmZScrewTxLink.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\gldraw.obj
+\Projects\School2\DynaMechs4.0\dynamechs\obj\platform.msvc60.i686\svd_linpack.obj
+]
+Creating command line "link.exe @C:\DOCUME~1\RODENB~1\LOCALS~1\Temp\RSPA8.tmp"
+<h3>Output Window</h3>
+Compiling...
+dmContactModel.cpp
+dmTreadmill.cpp
+gldraw.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+dm.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
