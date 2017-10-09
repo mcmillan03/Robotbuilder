@@ -1,9 +1,11 @@
 # Robotbuilder
 
 Interface created by: Steven Rodenbaugh and David E. Orin
+
 Simulation engine (Dynamechs) created by: Scott McMillan
-Department of Electical Engineering
-The Ohio State University
+
+Department of Electical Engineering \\
+The Ohio State University \\
 Columbus, OH 43210
 
 Robot simulation environment from Ohio State. Includes Dynamechs simulation engine and Robotbuilder interface
